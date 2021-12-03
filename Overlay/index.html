@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>overlay</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="timer">.</div>
+        <div class="rank"><span id="rank"></span></div>
+        <div id="mods"></div>
+        <div id="title"></div>
+        <div id="artist"></div>
+        <div id="difficulty"></div>
+        <div id="pp"></div>
+        <div id="ppmax"></div>  
+        <div id="h100"></div>
+        <div id="h50"></div>
+        <div id="h0"></div>
+        <!--div id="key1"></div>
+        <div id="key2"></div-->
+
+        <div id="sb">
+            <div id="sbBg">
+                <img src="resources/scorebar-bg.png" />
+            </div>
+            <div id="sbColor">
+                <img src="resources/scorebar-colour.png" />
+            </div>
+        </div>
+        <div id="score"><div id="scoredata"></div></div>
+        <div id="acc"><div id="accdata"></div><div id="percent">%</div></div>
+
+        
+        <div id="comboShadow" class="comboShadow-scale"><div id="comboshadowdata"></div><div id="comboX">x</div></div>
+        <div id="combo" class="combo-scale"><div id="combodata"></div><div id="comboX">x</div></div>
+        <script src="deps/countUp.js"></script>
+        <script src="deps/reconnecting-websocket.min.js"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("./resources/Roboto-Regular.ttf");
+}
+
+@keyframes scale {        
+  from {
+    font-size: 70px;
+  }
+  to {
+    font-size: 65px;
+  }      
+}
+@keyframes shadowscale {        
+  from {
+    font-size: 90px;
+  }
+  to {
+    font-size: 65px;
+  }      
+}
+
+:root{
+    --SHD: #E4E4E4;
+    --S: #FFFB8B;
+    --A: #9DF9AA;
+    --B: #9DACF9;
+    --C: #ED9DF9;
+    --D: #F99D9D;
+}
+
+body,html{
+    margin:0;
+    padding:0;
+    width: 1920px;
+    height: 1080px;
+    font-family: "CustomFont";
+    color:  white;
+}
+
+#wrapper{
+    opacity: 0;
+    transition: 300ms;
+}
+#sb{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#sbBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#sbColor{
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    overflow: hidden;
+    width: 645px;
+    transition-property: width;
+    transition-duration: 140ms;
+}
+
+#timer {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+    transition: 100ms;
+    position: absolute;
+    background: conic-gradient(#999999 0, rgba(0,0,0,0) 0);
+    border-radius: 50%;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.5);
+    text-align: center;
+    color: white;
+    line-height: 27px;
+    font-size: 25px;
+    right: 185px;
+    top: 78px;
+}
+
+
+.base-timer {
+    position: absolute;
+    top: 84px;
+    right: 185px;
+    height: 40px;
+    width: 40px;
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 10px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    color: rgb(65,184,131);
+  stroke-width: 10px;
+
+  stroke-linecap: round;
+
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  transition: 300ms linear all;
+
+  stroke: currentColor;
+}
+
+.base-timer__svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+
+.click{
+    animation: click 100ms 2;
+    animation-direction: alternate;
+}
+@keyframes click{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+#score{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 70px;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+#acc{
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    display: flex;
+}
+
+#combo{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 65px;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    display: flex;
+    
+}
+#comboShadow{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 65px;
+    color: white;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+    display: flex;
+    opacity: 0.3;
+    
+}
+
+#percent{
+    color: #ff6400;
+}
+
+#comboX{
+    color: #ff009b;
+    font-weight: normal;
+}
+
+.combo-scale{
+    animation: scale 200ms ease;
+}
+.comboShadow-scale{
+    animation: shadowscale 200ms ease;
+}
+
+.rank{
+    font-size: 40px;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    text-shadow: 0 0 0.5rem black;
+    font-weight: 700;
+    transition: 100ms;
+}
+#rank{
+    position: absolute;
+    top: 80px;
+    right:  250px;
+    display: inline-block;
+}
+
+#mods {
+    font-size: 25px;
+    position: absolute;
+    color:  white;
+    right:  25px;
+    top:  132px;
+}
+#title {
+    font-size: 25px;
+    margin-top: 32px;
+    margin-left:  15px;
+    font-weight: 700;
+    color: white;
+
+}
+#artist {
+    color:  white;
+    margin-left: 15px;
+}
+
+#difficulty {
+    color:  white;
+}
+
+
+#pp  {
+    position: absolute;
+    right: 270px;
+    bottom:  280px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#ppmax {
+    position: absolute;
+    right: 270px;
+    bottom: 260px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+#h100 {
+    position: absolute;
+    right:  177px;
+    bottom:  268px;
+    font-size: 25px;
+}
+
+#h50 {
+    position: absolute;
+    right: 100px;
+    bottom:  268px;
+    font-size: 25px;
+}
+
+#h0 {
+    position: absolute;
+    right:  34px;
+    bottom:  268px;
+    font-size: 25px;
+}
+
+
+
+
+
+#pp::after {
+    content: "PP";
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#ppmax::after {
+    content: "PP";
+    font-size: 10px;
+}
+
+#ppmax::before {
+    content: "/";
+}
+
+#h100::after {
+    content:  "x100";
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#h50::after {
+    content:  "x50";
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#h0::after {
+    content:  "x0";
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+#key1 {
+    height: 50px;
+    width: 5px;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    right: 5px;
+    top: 600px;
+    transition: 10ms;
+}
+
+#key2 {
+    height: 50px;
+    width: 5px;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    right: 5px;
+    top: 660px;
+    transition: 10ms;
+}
