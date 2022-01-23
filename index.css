@@ -166,11 +166,6 @@ body,html{
     left: 20px;
     font-size: 65px;
     color: white;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
     display: flex;
     
 }
@@ -180,11 +175,6 @@ body,html{
     left: 20px;
     font-size: 65px;
     color: white;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
     display: flex;
     opacity: 0.3;
     
@@ -249,7 +239,7 @@ body,html{
 
 #pp  {
     position: absolute;
-    right: 270px;
+    right: 20px;
     bottom:  280px;
     font-size: 30px;
     font-weight: 700;
@@ -257,13 +247,14 @@ body,html{
 
 #ppmax {
     position: absolute;
-    right: 270px;
+    right: 20px;
     bottom: 260px;
     font-size: 20px;
     opacity: 0.8;
 }
 
 #h100 {
+    display: none;
     position: absolute;
     right:  177px;
     bottom:  268px;
@@ -271,6 +262,7 @@ body,html{
 }
 
 #h50 {
+    display: none;
     position: absolute;
     right: 100px;
     bottom:  268px;
@@ -278,6 +270,7 @@ body,html{
 }
 
 #h0 {
+    display: none;
     position: absolute;
     right:  34px;
     bottom:  268px;
