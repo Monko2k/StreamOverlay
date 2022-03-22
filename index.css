@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("./resources/Roboto-Regular.ttf");
+    src: url("./resources/Inter-ExtraLight.ttf");
 }
 
 @keyframes scale {        
@@ -79,8 +79,8 @@ body,html{
     color: white;
     line-height: 27px;
     font-size: 25px;
-    right: 185px;
-    top: 78px;
+    right: 145px;
+    top: 54px;
 }
 
 
@@ -137,8 +137,8 @@ body,html{
 #score{
     position: absolute;
     top: 0px;
-    right: 15px;
-    font-size: 70px;
+    right: 10px;
+    font-size: 50px;
     color: white;
     text-shadow: 
     -2px -2px 0 #000,  
@@ -148,9 +148,9 @@ body,html{
 }
 #acc{
     position: absolute;
-    top: 80px;
-    right: 15px;
-    font-size: 40px;
+    top: 60px;
+    right: 10px;
+    font-size: 35px;
     color: white;
     text-shadow: 
     -2px -2px 0 #000,  
@@ -197,7 +197,7 @@ body,html{
 }
 
 .rank{
-    font-size: 40px;
+    font-size: 35px;
     height: 100%;
     width: 30%;
     text-align: center;
@@ -207,8 +207,8 @@ body,html{
 }
 #rank{
     position: absolute;
-    top: 80px;
-    right:  250px;
+    top: 60px;
+    right:  200px;
     display: inline-block;
 }
 
@@ -217,10 +217,10 @@ body,html{
     position: absolute;
     color:  white;
     right:  25px;
-    top:  132px;
+    top:  110px;
 }
 #title {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 32px;
     margin-left:  15px;
     font-weight: 700;
@@ -240,7 +240,7 @@ body,html{
 #pp  {
     position: absolute;
     right: 20px;
-    bottom:  280px;
+    bottom:  240px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -248,7 +248,7 @@ body,html{
 #ppmax {
     position: absolute;
     right: 20px;
-    bottom: 260px;
+    bottom: 220px;
     font-size: 20px;
     opacity: 0.8;
 }
