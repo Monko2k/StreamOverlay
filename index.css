@@ -1,6 +1,6 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("./resources/Inter-ExtraLight.ttf");
+    src: url("./resources/Roboto-Regular.ttf");
 }
 
 @keyframes scale {        
@@ -11,6 +11,7 @@
     font-size: 65px;
   }      
 }
+
 @keyframes shadowscale {        
   from {
     font-size: 90px;
@@ -29,7 +30,7 @@
     --D: #F99D9D;
 }
 
-body,html{
+body,html {
     margin:0;
     padding:0;
     width: 1920px;
@@ -38,21 +39,24 @@ body,html{
     color:  white;
 }
 
-#wrapper{
+#wrapper {
     opacity: 0;
     transition: 300ms;
 }
-#sb{
+
+#sb {
     position: absolute;
     top: 0;
     left: 0;
 }
-#sbBg{
+
+#sbBg {
     position: absolute;
     top: 0;
     left: 0;
 }
-#sbColor{
+
+#sbColor {
     position: absolute;
     top: 8px;
     left: 12px;
@@ -83,7 +87,6 @@ body,html{
     top: 54px;
 }
 
-
 .base-timer {
     position: absolute;
     top: 84px;
@@ -104,37 +107,19 @@ body,html{
 
 .base-timer__path-remaining {
     color: rgb(65,184,131);
-  stroke-width: 10px;
-
-  stroke-linecap: round;
-
-  transform: rotate(90deg);
-  transform-origin: center;
-
-  transition: 300ms linear all;
-
-  stroke: currentColor;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 300ms linear all;
+    stroke: currentColor;
 }
 
 .base-timer__svg {
-  /* Flips the svg and makes the animation to move left-to-right */
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
-.click{
-    animation: click 100ms 2;
-    animation-direction: alternate;
-}
-@keyframes click{
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0.9);
-    }
-}
-
-#score{
+#score {
     position: absolute;
     top: 0px;
     right: 10px;
@@ -144,9 +129,10 @@ body,html{
     -2px -2px 0 #000,  
     2px -2px 0 #000,
     -2px 2px 0 #000,
-     2px 2px 0 #000;
+    2px 2px 0 #000;
 }
-#acc{
+
+#acc {
     position: absolute;
     top: 60px;
     right: 10px;
@@ -160,16 +146,16 @@ body,html{
     display: flex;
 }
 
-#combo{
+#combo {
     position: absolute;
     bottom: 10px;
     left: 20px;
     font-size: 65px;
     color: white;
     display: flex;
-    
 }
-#comboShadow{
+
+#comboShadow {
     position: absolute;
     bottom: 10px;
     left: 20px;
@@ -177,26 +163,26 @@ body,html{
     color: white;
     display: flex;
     opacity: 0.3;
-    
 }
 
-#percent{
+#percent {
     color: #ff6400;
 }
 
-#comboX{
+#comboX {
     color: #ff009b;
     font-weight: normal;
 }
 
-.combo-scale{
+.combo-scale {
     animation: scale 200ms ease;
 }
-.comboShadow-scale{
+
+.comboShadow-scale {
     animation: shadowscale 200ms ease;
 }
 
-.rank{
+.rank {
     font-size: 35px;
     height: 100%;
     width: 30%;
@@ -205,7 +191,8 @@ body,html{
     font-weight: 700;
     transition: 100ms;
 }
-#rank{
+
+#rank {
     position: absolute;
     top: 60px;
     right:  200px;
@@ -219,14 +206,15 @@ body,html{
     right:  25px;
     top:  110px;
 }
+
 #title {
     font-size: 18px;
     margin-top: 26px;
     margin-left:  15px;
     font-weight: 700;
     color: white;
-
 }
+
 #artist {
     color:  white;
     margin-left: 15px;
@@ -236,8 +224,7 @@ body,html{
     color:  white;
 }
 
-
-#pp  {
+#pp {
     position: absolute;
     right: 20px;
     bottom:  240px;
@@ -253,34 +240,6 @@ body,html{
     opacity: 0.8;
 }
 
-#h100 {
-    display: none;
-    position: absolute;
-    right:  177px;
-    bottom:  268px;
-    font-size: 25px;
-}
-
-#h50 {
-    display: none;
-    position: absolute;
-    right: 100px;
-    bottom:  268px;
-    font-size: 25px;
-}
-
-#h0 {
-    display: none;
-    position: absolute;
-    right:  34px;
-    bottom:  268px;
-    font-size: 25px;
-}
-
-
-
-
-
 #pp::after {
     content: "PP";
     font-size: 15px;
@@ -294,44 +253,4 @@ body,html{
 
 #ppmax::before {
     content: "/";
-}
-
-#h100::after {
-    content:  "x100";
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-#h50::after {
-    content:  "x50";
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-#h0::after {
-    content:  "x0";
-    font-size: 12px;
-    opacity: 0.8;
-}
-
-#key1 {
-    height: 50px;
-    width: 5px;
-    background: white;
-    border-radius: 3px;
-    position: absolute;
-    right: 5px;
-    top: 600px;
-    transition: 10ms;
-}
-
-#key2 {
-    height: 50px;
-    width: 5px;
-    background: white;
-    border-radius: 3px;
-    position: absolute;
-    right: 5px;
-    top: 660px;
-    transition: 10ms;
 }
